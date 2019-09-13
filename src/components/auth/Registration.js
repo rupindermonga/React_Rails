@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Button from "react-bootstrap/Button";
 
 class Registration extends Component {
   constructor(props) {
@@ -77,7 +78,9 @@ class Registration extends Component {
             required
           />
 
-          <button type="submit">Register</button>
+          <Button variant="success" type="submit">
+            Register
+          </Button>
         </form>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Button from "react-bootstrap/Button";
 
 class Login extends Component {
   constructor(props) {
@@ -66,7 +67,9 @@ class Login extends Component {
             required
           />
 
-          <button type="submit">Login</button>
+          <Button variant="success" type="submit">
+            Login
+          </Button>
         </form>
       </div>
     );

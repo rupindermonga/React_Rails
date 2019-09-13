@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, Nav } from "react-bootstrap";
 
 export default class App extends Component {
   constructor() {
@@ -65,6 +67,14 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
+        <Nav className="justify-content-end" activeKey="/home">
+          <Nav.Item>
+            <Nav.Link href="/">Home</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+          </Nav.Item>
+        </Nav>
         <BrowserRouter>
           <Switch>
             <Route
